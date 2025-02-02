@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, { useState } from "react";
 import "./index.css";
 import Home from "./Pages/Home";
-import SwipeableViews from 'react-swipeable-views';
 import About from "./Pages/About";
 import Navbar from "./components/Navbar";
 import Portofolio from "./Pages/Portofolio";
@@ -23,15 +22,12 @@ const ProjectPageLayout = () => <ProjectDetails />;
 
 function App() {
   return (
-    <SwipeableViews>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/project/:id" element={<ProjectPageLayout />} />
-        </Routes>
-      </BrowserRouter>
-    </SwipeableViews>
-
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/project/:id" element={<ProjectPageLayout />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
