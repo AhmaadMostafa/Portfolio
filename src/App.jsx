@@ -1,4 +1,4 @@
-import {Routes, Route , BrowserRouter} from "react-router-dom";
+import {Routes, Route , HashRouter} from "react-router-dom";
 import React, { useState } from "react";
 import "./index.css";
 import Home from "./Pages/Home";
@@ -22,12 +22,12 @@ const ProjectPageLayout = () => <ProjectDetails />;
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
-        <Route path="/portfolio" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/project/:id" element={<ProjectPageLayout />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
