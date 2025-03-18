@@ -60,7 +60,7 @@ function TabPanel({ children, value, index, ...other }) {
 const Projects = [
   {
     id: 1,
-    Img: "/project1/1.png",
+    Img: "project1/1.png",
     Title: "Book Store",
     Description: "Platform designed to provide users with a seamless shopping experience.",
     ProjectLink: "https://ahmaadmostafa.github.io/Book-s-Store/main.html",
@@ -68,7 +68,7 @@ const Projects = [
     TechStack: ["HTML", "CSS", "JavaScript"],
   },
   {id: 2,
-    Img: "/project1/2.png",
+    Img: "project1/2.png",
     Title: "Movies Platform",
     Description: "The platform allows users to browse and view movies through a simple interface.",
     ProjectLink: "https://ahmaadmostafa.github.io/Movies/",
@@ -76,7 +76,7 @@ const Projects = [
     TechStack: ["HTML", "CSS", "JavaScript" , "React js"]
   },
   {id: 3,
-    Img: "/project1/4.png",
+    Img: "project1/4.png",
     Title: "Smart Finish",
     Description: "A platform connecting users with skilled professionals for apartment finishing services.",
     ProjectLink: "",
@@ -89,10 +89,10 @@ const Projects = [
 // Static Certificates Data
 const staticCertificates = [
   {
-    Img: "/Certificates/1.png", 
+    Img: "Certificates/1.png", 
   },
   {
-    Img: "/Certificates/3.png",
+    Img: "Certificates/3.png",
   },
   {
     Img: "Certificates/4.png",
